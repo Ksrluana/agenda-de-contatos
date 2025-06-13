@@ -9,15 +9,6 @@ import java.util.List;
 public class ContatoDAO {
     private static final String ARQUIVO = "src/main/java/org/agendadecontatos/utils/contatos.csv";
 
-    public class TesteContato {
-        public static void main(String[] args) {
-            ContatoDAO dao = new ContatoDAO();
-            Contato c = new Contato(dao.gerarProximoId(), "Luana", "62999999999", "luana@email.com");
-            dao.salvarContato(c);
-            System.out.println("Contato salvo com sucesso!");
-        }
-    }
-
 
     // Gera o próximo ID com base no maior ID existente no CSV
     public int gerarProximoId() {
